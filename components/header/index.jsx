@@ -1,24 +1,27 @@
 import {Container, Nav, Navbar} from "react-bootstrap";
+import style from './index.module.css'
 
 export default function Index() {
 
-  return <div className="page-header">
-    <Navbar expand="lg">
-      <Container>
+  return <div className={style.pageHeader}>
+    <Navbar expand="xl" className={style.topBar}>
+      <Container className={style.container}>
         <div className="left">
-          <div className="item link">
+          <div className={style.li}>
             <a href="/">Seller Centre</a>
-            <a href="/">Download</a>
-            <Nav.Link href="/shop">Sell on Shopee</Nav.Link>
-
           </div>
-          <div className="item link">
-            <a href="/shopee">Sell on Shopee</a>
+          <div className={style.li}>
+            <a href="/shop">Sell on Shopee</a>
           </div>
-          <div className="item link"></div>
-          <div className="item link"></div>
+          <div className={style.li}>
+            <a href="/download">Download</a>
+            <div className={style.download}></div>
+          </div>
+          <div className={style.li}>
+            <span>Follow us on</span>
+          </div>
         </div>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/home">Seller Centre</Nav.Link>
@@ -28,7 +31,7 @@ export default function Index() {
             <Nav.Link href="/download">Follow us on</Nav.Link>
           </Nav>
 
-        </Navbar.Collapse>
+        </Navbar.Collapse> */}
 
         <Nav className="justify-content-end" activeKey="/home">
           <Nav.Item>
