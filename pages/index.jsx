@@ -4,7 +4,8 @@ import Image from 'next/image'
 import banner1 from '../public/img/index/banner/1.jpg'
 import banner2 from '../public/img/index/banner/2.png'
 import banner3 from '../public/img/index/banner/3.jpg'
-import Index from "../components/header";
+import Header from "../components/header";
+import Footer from "../components/footer";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon-32x32.png" />
       </Head>
 
-      <Index />
+      <Header />
 
       <Container className="md-container">
 
@@ -63,64 +64,6 @@ export default function Home() {
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
-
-          <Container>
-            <Row className="justify-content-md-between">
-              <Card className="sml-card">
-                <Card.Body>
-                  <Card.Title>Documentation</Card.Title>
-                  <Card.Text>
-                    Find in-depth information about Next.js features and API.
-                  </Card.Text>
-                  <Button variant="primary" href="https://nextjs.org/docs">
-                    More &rarr;
-                  </Button>
-                </Card.Body>
-              </Card>
-              <Card className="sml-card">
-                <Card.Body>
-                  <Card.Title>Learn</Card.Title>
-                  <Card.Text>
-                    Learn about Next.js in an interactive course with quizzes!
-                  </Card.Text>
-                  <Button variant="primary" href="https://nextjs.org/learn">
-                    More &rarr;
-                  </Button>
-                </Card.Body>
-              </Card>
-            </Row>
-            <Row className="justify-content-md-between">
-              <Card className="sml-card">
-                <Card.Body>
-                  <Card.Title>Examples</Card.Title>
-                  <Card.Text>
-                    Discover and deploy boilerplate example Next.js projects.
-                  </Card.Text>
-                  <Button
-                    variant="primary"
-                    href="https://github.com/vercel/next.js/tree/canary/examples"
-                  >
-                    More &rarr;
-                  </Button>
-                </Card.Body>
-              </Card>
-              <Card className="sml-card">
-                <Card.Body>
-                  <Card.Title>Deploy</Card.Title>
-                  <Card.Text>
-                    Instantly deploy your Next.js site to a public URL with
-                    Vercel.
-                  </Card.Text>
-                  <Button
-                    variant="primary"
-                    href="https://vercel.com/new?utm_source=github&utm_medium=example&utm_campaign=next-example"
-                  >
-                    More &rarr;
-                  </Button>
-                </Card.Body>
-              </Card>
-            </Row>
-          </Container>
         </Container>
 
         <footer className="cntr-footer">
@@ -134,7 +77,8 @@ export default function Home() {
           </a>
         </footer>
       </Container>
-    </div>
 
+      <Footer />
+    </div>
   )
 }
