@@ -2,7 +2,7 @@ import { Container,  Navbar} from "react-bootstrap";
 import Image from 'next/image'
 
 import style from './index.module.css'
-import qrcode from '../../public/img/index/store/qrcode.png'
+import qrcode from '../../../public/img/index/store/qrcode.png'
 import SearchBox from "./SearchBox";
 import Keywords from "./Keywords";
 
@@ -21,7 +21,7 @@ export default function Header() {
           <div className={style.li} >
             <a href="/download">Download</a>
             <div className={style.download}>
-              <Image src={qrcode} />
+              <Image src={qrcode} style={{border: '1px solid #ccc'}} />
               <div className={`${style.store} ${style.appStore}`} />
               <div className={`${style.store} ${style.googlePlay}`} />
               <div className={`${style.store} ${style.appGallery}`} />

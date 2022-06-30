@@ -1,6 +1,16 @@
 /* ensure all pages have Bootstrap CSS */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
+:root{
+  --font-cry: Roboto,Helvetica Neue,Helvetica,Arial,WenQuanYi Zen Hei,Hiragino Sans GB,LiHei Pro,Heiti TC,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
+}
+
+
+html,
+body {
+  font-family: var(--font-cry);
+}
+
 .md-container {
   max-width: 800px;
   padding-top: 2rem;

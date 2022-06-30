@@ -1,0 +1,145 @@
+.pageFooter{
+  border-top: 4px solid #ee4d2d;
+  background-color: #fbfbfb;
+  color: rgba(0,0,0,.54);
+}
+
+.footerInfo{
+  margin: 0 10px;
+  width: 100%;
+  align-items: flex-start;
+  display: flex;
+}
+
+.column {
+  width: 20%;
+  padding: 10px;
+}
+
+.title{
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(0,0,0,.54);
+  margin-bottom: 20px;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+.links{
+  text-decoration: none;
+  display: block;
+  color: rgba(0,0,0,.54);
+  list-style-type: none;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.links li{
+  text-transform: capitalize;
+  margin-bottom: 12px;
+  display: flex;
+}
+
+
+.links li a{
+  text-decoration: none;
+  color: rgba(0,0,0,.54);
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.links li a:hover{
+  color: #ee4d2d;
+}
+
+.fb{
+  background-position: 30.104712041884817% 9.803921568627452%;
+}
+
+.ins{
+  background-position: 27.486910994764397% 60.78431372549019%;
+}
+
+.linkedIn{
+  background-position: 60.73298429319372% 54.90196078431372%;
+}
+.sms{
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin-bottom: 4px;
+  margin-right: 10px;
+  float: left;
+  background-image: url(../../../public/img/index/sms2.png);
+  background-size: 1293.75% 418.75%;
+
+}
+
+.download{
+  display: flex;
+  flex-direction: row;
+}
+
+.qrcode{
+  border: 1px solid #ddd;
+  width: 84px;
+  height: 84px;
+  background-image: url(../../../public/img/index/store/qrcode.png);
+  background-size: 100%;
+  margin-right: 15px;
+}
+
+.stores{
+  height: 84px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+}
+
+.store{
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 80px;
+  height: 20px;
+}
+
+.appStore{
+  background-image: url(../../../public/img/index/store/appStore.png);
+}
+.googlePlay{
+  background-image: url(../../../public/img/index/store/googlePlay.png);
+}
+.appGallery{
+  background-image: url(../../../public/img/index/store/appGallery.png);
+}
+
+.bottomBar{
+  border-top: 0.5px solid rgba(0,0,0,.1);
+  justify-content: space-between;
+  padding: 2.5rem 0;
+  display: flex;
+  font-size: 14px;
+}
+.copyright{
+  flex-shrink: 0;
+  margin-right: 25px;
+}
+
+.sites{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.siteText{
+  flex: 1 0 auto;
+  text-align: right;
+}
+.siteLink{
+  padding: 0 5px;
+  text-decoration: none;
+  color: rgba(0,0,0,.54);
+}
+
+.siteLink:not(:last-child){
+  border-right: 0.5px solid rgba(0,0,0,.2);
+}
