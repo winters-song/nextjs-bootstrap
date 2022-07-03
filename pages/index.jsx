@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import {Container, Row, Card, Button, Carousel} from 'react-bootstrap'
 import Image from 'next/image'
 import banner1 from '../public/img/index/banner/1.jpg'
 import banner2 from '../public/img/index/banner/2.png'
