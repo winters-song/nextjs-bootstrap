@@ -1,6 +1,7 @@
 import Image from "next/image";
 import style from "./index.module.css";
-import {Container} from "react-bootstrap";
+import Container from '@mui/material/Container';
+
 import BTC from '../../../public/img/index/payment/BTC.png'
 import ETH from '../../../public/img/index/payment/ETH.png'
 

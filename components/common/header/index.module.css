@@ -1,5 +1,5 @@
 
-
+/* 
 .pageHeader{
   position: fixed;
   top: 0;
@@ -11,12 +11,18 @@
   font-size: 13px;
   color: white;
   background: linear-gradient(-180deg,#f53d2d,#f63);
+} */
+.tbar{
+  font-size: 13px;
+  height: 30px;
+  min-height: auto;
 }
-.pageHeader .container{
-  /*max-width: none;*/
+
+.left{
+  float: left;
 }
-.pageHeader .topBar{
-  padding: 0;
+.right{
+  float: right;
 }
 
 .li{
@@ -36,17 +42,15 @@
   border-left: 2px solid;
   position: absolute;
   left: -6px;
-  top: 7px;
+  top: 3px;
 }
 
 .li a, .li span{
-  display: inline-block;
   color: white;
   padding: 4px;
 }
 .li a:hover{
   opacity: 0.7;
-  text-decoration: none;
 }
 
 .li:hover .download{
@@ -106,59 +110,28 @@
   background-position: 58.064516129032256% 16.129032258064516%;
 }
 
-.right{
-  float: right;
-}
-
-.shopeeSvgIcon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  fill: currentColor;
-  position: relative;
-  top: -1px;
-  margin-right: 4px;
-}
-.iconNotification {
-  width: 0.875rem;
-  height: 1.125rem;
-}
-.iconHelpCenter{
-  height: 1.125rem;
-  width: 1.125rem;
-}
-.iconGlobal {
-  display: inline-block;
-  position: relative;
-  top: -1px;
-  margin-right: 4px;
+.right svg{
+  float: left;
 }
 .user{
   float: right;
 }
 
-.searchWrapper{
-  padding-bottom: 0;
-}
-.searchWrapper .container{
-  position: relative;
-  height: 80px;
+.logoWrapper {
+  width: 200px;
 }
 
-.logo {
-  position: absolute;
-  top: 5px;
-  left: 20px;
+.logoWrapper svg{
   width: 162px;
   height: 50px;
-  fill: white;
+  color: white;
 }
 
+.searchWrapper{
+  flex: 1;
+}
 .searchBox{
-  position: absolute;
-  left: 200px;
-  right: 140px;
-  top: 10px;
+  position: relative;
 }
 .searchInput {
   width: 100%;
@@ -185,33 +158,27 @@
 .searchButton:hover{
   background: #fb6445;
 }
-.searchButton .shopeeSvgIcon {
-  margin: 10px 0;
+.searchButton svg {
+  margin: 5px 0;
 }
-
-.keywords{
-  position: absolute;
-  left: 200px;
-  right: 140px;
-  top: 55px;
+.keywords {
+  margin-bottom: 4px;
 }
-.word{
+.keywords a{
   color: white;
   opacity: 0.9;
   font-weight: 300;
-  margin-right: 10px;
+  margin-right: 15px;
+  font-size: 13px;
 }
-.word:hover {
+.keywords a:hover {
   color: white;
-  text-decoration: none;
+  opacity: 0.7;
 }
 
 .cartWrapper{
-  position: absolute;
   width: 140px;
   text-align: center;
-  top: 20px;
-  right: 0;
 }
 .cartWrapper a{
   display: inline-block;
@@ -220,5 +187,6 @@
 .cartWrapper svg{
   width: 26px;
   height: 26px;
+  margin: 10px 20px;
   cursor: pointer;
 }

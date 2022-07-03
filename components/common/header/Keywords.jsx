@@ -1,5 +1,6 @@
-import style from "./index.module.css";
 
+import style from "./index.module.css";
+import Link from '@mui/material/Link';
 /* header搜索提示词 */
 
 const list = ['Mask', 'Premiummall', 'Durian', 'Crocs', 'Water Bottle',
@@ -14,7 +15,7 @@ const str2Url = (str) => {
 export default function Keywords() {
   return <div className={style.keywords}>
     {list.map((item, index)=> (
-      <a className={style.word} href={str2Url(item)} key={index}>{item}</a>
+      <Link href={str2Url(item)} key={index} underline="none">{item}</Link>
     ))}
   </div>
 }
