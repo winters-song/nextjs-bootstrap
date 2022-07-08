@@ -162,14 +162,15 @@
   margin: 5px 0;
 }
 .keywords {
-  margin-bottom: 4px;
+  margin-top: 4px;
+  margin-bottom: 0;
 }
 .keywords a{
   color: white;
   opacity: 0.9;
-  font-weight: 300;
+  /*font-weight: 300;*/
   margin-right: 15px;
-  font-size: 13px;
+  /*font-size: 13px;*/
 }
 .keywords a:hover {
   color: white;
